@@ -1,3 +1,5 @@
+/* ///////////////////////////////////////////////////HEADER */
+
 
 header h1 {
     margin-top: 20px;
@@ -28,7 +30,7 @@ header ul {
     list-style: square;
     font-size: 1.2em;
 }
-
+/* ///////////////////////////////////////////////////MAIN */
 body {
     background-color: #6B6B14;
     margin: 10px;
@@ -36,60 +38,60 @@ body {
 section h2 {
     color: #EAEA93;
 }
-main img {
+main img:last-of-type {
+    display: block;
     float: left;
 }
 h2::first-letter{
     font-weight: 200;
 }
+/* ///////////////////////////////////////////////////FACT 1 */
 #spider-myth {
-    margin-left: 500px;
+    margin-left: 400px;
+    margin-bottom: 400px;
 }
-#spider-myth img {
-    float: none;
+#spider-myth img:first-child {
     box-shadow: 10px 10px 10px #85BCF4, -5px 5px 5px #F485B3;
     height: 388.5px;
+    width: 700px;
 }
+#spider-myth img:last-child {
+    height: 80px;
+    width: auto;
+    transform: rotate(160deg);
+    margin-left: 20px;
+}
+.click-me p {
+    font-size: 3em;
+    color: #F6F603;
+    animation-duration: 0.6s;
+    animation-name: blink2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-shadow: 0px 0px 2px black;
+}
+@keyframes blink2 {
+    from {
+        color: #BFBF3F;
+    }
+    to {color: #BF3F7F;
+    }
+}
+
+/* ///////////////////////////////////////////////////FACT 2 */
 #spider-myth-debunked {
-    margin-top: 100px;
+    margin-top: 300px;
 }
+.vertical-image {
+    float: left;
+}
+/* ///////////////////////////////////////////////////TABLE */
 #table {
     border: solid;
     border-block-start-color: #BF3F7F;
     margin-right: 200px;
     margin-left: 210px;
 }
-footer {
-    margin-top: 100px;
-    text-align: center;
-}
-footer::first-line {
-    font-style: italic;
-    margin-bottom: 30px;
-}
-footer p:nth-of-type(2) {
-    margin-top: 70px;
-    font-size: 1.3em;
-    color: #FFFF2D;
-    text-shadow: 4px 4px 20px black ;
-    border:black;
-    animation-duration: 0.7s;
-    animation-name: blink;
-    animation-iteration-count: infinite;
-}
-@keyframes blink {
-    from{
-        opacity: 100%;
-    }
-    to {opacity: 20%;
-    }
-}
-
-footer img {
-    width: 400px;
-    margin-top: -50px;
-}
-
 html {
     font-family: sans-serif;
   }
@@ -106,9 +108,11 @@ html {
   caption {
       background-color: #BFBF3F;
       font-size: 1em;
+      border:solid;
+      border-color: #BF3F7F;
   }
   td, th {
-    border: 1px solid;
+    border: 1px solid #BF3F7F;
     padding: 10px 20px #BF3F7F;
   }
   
@@ -118,3 +122,35 @@ html {
   caption {
     padding: 10px;
   }
+/* ///////////////////////////////////////////////////FOOTER */
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
+footer::first-line {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+footer p:nth-of-type(2) {
+    margin-top: 70px;
+    font-size: 1.3em;
+    color: #FFFF2D;
+    text-shadow: 0px 0px 10px black ;
+    border:black;
+    animation-duration: 0.7s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes blink {
+    from{
+        opacity: 100%;
+    }
+    to {opacity: 20%;
+    }
+}
+
+footer img {
+    width: 400px;
+    margin-top: -50px;
+}
