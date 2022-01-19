@@ -1,0 +1,32 @@
+
+header img{
+    width: 1000px;
+    margin-top: 10px;
+}
+
+header ul {
+    margin-top: -80px;
+    color: red;
+}
+
+body {
+    background-color: #6B6B14;
+}
+section h2 {
+    color: #EAEA93;
+}
+main img {
+    float: left;
+}
+h2:not(first-child) {
+    margin-left: 1000px;
+}
+#spider-myth img {
+    float: none;
+    box-shadow: 10px 10px 10px #85BCF4, -5px 5px 5px #F485B3;
+    height: 388.5px;
+}
+footer {
+    margin-top: 100px;
+    text-align: center;
+}
